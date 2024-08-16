@@ -1,0 +1,158 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    
+  }
+ .price{
+    float: right;
+ }
+  
+  .header {
+    background-color: rgb(113, 66, 66);
+    color: whitesmoke;
+    padding: 20px;
+box-shadow: 0 0 10px ;
+border: solid black;
+    
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color:bisque;
+    text-align: center;
+  }
+  
+  .header h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  .coffee-list li{
+    float: right;
+  }
+  
+  /* Menu Styles */
+  
+  .menu {
+    background-color:rgb(94, 40, 39);
+    color:beige;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .menu h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    
+  }
+  
+  .menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Food and Desserts Styles */
+  
+  .food {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(94,40,39);
+    
+ color: bisque;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .food h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+  }
+  
+  .food ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .food li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    width: 45%;
+  }
+  
+  .food li:last-child {
+    border-bottom: none;
+  }
+  
+  .food li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  /* Opening Hours Styles */
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .food {
+      flex-direction: column;
+    }
+    .food li {
+      width: 100%;
+    }
+  }
